@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6B3B222A77CE5A0037BDC1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B212A77CE5A0037BDC1 /* Router.swift */; };
+		8C6B3B242A77CE740037BDC1 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B232A77CE740037BDC1 /* LaunchRouter.swift */; };
+		8C6B3B272A77CEBC0037BDC1 /* ModelRealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B262A77CEBC0037BDC1 /* ModelRealmUser.swift */; };
+		8C6B3B292A77CEE20037BDC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B282A77CEE20037BDC1 /* LoginViewController.swift */; };
 		F775F9ED28193AA7009A0A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F775F9EC28193AA7009A0A1A /* AppDelegate.swift */; };
 		F775F9EF28193AA7009A0A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F775F9EE28193AA7009A0A1A /* SceneDelegate.swift */; };
 		F775F9F128193AA7009A0A1A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F775F9F028193AA7009A0A1A /* MapController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C6B3B212A77CE5A0037BDC1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8C6B3B232A77CE740037BDC1 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
+		8C6B3B262A77CEBC0037BDC1 /* ModelRealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRealmUser.swift; sourceTree = "<group>"; };
+		8C6B3B282A77CEE20037BDC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F775F9E928193AA7009A0A1A /* RunMapGB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunMapGB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F775F9EC28193AA7009A0A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F775F9EE28193AA7009A0A1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C6B3B202A77CE480037BDC1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B3B212A77CE5A0037BDC1 /* Router.swift */,
+				8C6B3B232A77CE740037BDC1 /* LaunchRouter.swift */,
+				8C6B3B252A77CE9E0037BDC1 /* Model */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8C6B3B252A77CE9E0037BDC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F775FA13281945E4009A0A1A /* ModelRealm.swift */,
+				8C6B3B262A77CEBC0037BDC1 /* ModelRealmUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F775F9E028193AA7009A0A1A = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +93,9 @@
 			children = (
 				F775F9EC28193AA7009A0A1A /* AppDelegate.swift */,
 				F775F9EE28193AA7009A0A1A /* SceneDelegate.swift */,
-				F775FA13281945E4009A0A1A /* ModelRealm.swift */,
+				8C6B3B202A77CE480037BDC1 /* Router */,
 				F775F9F028193AA7009A0A1A /* MapController.swift */,
+				8C6B3B282A77CEE20037BDC1 /* LoginViewController.swift */,
 				F775F9F228193AA7009A0A1A /* Main.storyboard */,
 				F775F9F528193AA8009A0A1A /* Assets.xcassets */,
 				F775F9F728193AA8009A0A1A /* LaunchScreen.storyboard */,
@@ -158,6 +186,10 @@
 			files = (
 				F775F9F128193AA7009A0A1A /* MapController.swift in Sources */,
 				F775FA14281945E4009A0A1A /* ModelRealm.swift in Sources */,
+				8C6B3B272A77CEBC0037BDC1 /* ModelRealmUser.swift in Sources */,
+				8C6B3B222A77CE5A0037BDC1 /* Router.swift in Sources */,
+				8C6B3B292A77CEE20037BDC1 /* LoginViewController.swift in Sources */,
+				8C6B3B242A77CE740037BDC1 /* LaunchRouter.swift in Sources */,
 				F775F9ED28193AA7009A0A1A /* AppDelegate.swift in Sources */,
 				F775F9EF28193AA7009A0A1A /* SceneDelegate.swift in Sources */,
 			);
