@@ -1,19 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IFo-7G-Wf1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="qWl-wW-nmp">
+            <objects>
+                <viewController id="IFo-7G-Wf1" customClass="LoginViewController" customModule="RunMapGB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="COz-kR-o9C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-tO-l1C">
+                                <rect key="frame" x="132" y="294" width="151" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-yL-QTi">
+                                <rect key="frame" x="132" y="377" width="151" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBx-Pv-dz7">
+                                <rect key="frame" x="171" y="571" width="73" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Войти"/>
+                                <connections>
+                                    <action selector="logIn:" destination="IFo-7G-Wf1" eventType="touchUpInside" id="2ce-A7-vNS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-H9-jBj">
+                                <rect key="frame" x="138" y="647" width="139" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Регистрация"/>
+                                <connections>
+                                    <action selector="register:" destination="IFo-7G-Wf1" eventType="touchUpInside" id="HnE-hW-mzf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n5i-YC-IPX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="S1a-tO-l1C" id="ODG-1c-T8c"/>
+                        <outlet property="passwordView" destination="WF6-yL-QTi" id="ia9-IF-yNf"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="show" id="PX2-LY-bZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNz-oX-75s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688.40579710144937" y="128.57142857142856"/>
+        </scene>
         <!--Map Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapController" customModule="RunMapGB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WmZ-FI-zoU" customClass="GMSMapView">
@@ -22,7 +75,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qk-ty-t6L">
-                                <rect key="frame" x="40" y="690" width="93" height="31"/>
+                                <rect key="frame" x="40" y="707" width="105.5" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Last Route"/>
                                 <connections>
@@ -30,10 +83,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-PV-7R6">
-                                <rect key="frame" x="40" y="741" width="142.5" height="76"/>
+                                <rect key="frame" x="40" y="761.5" width="164.5" height="79.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-XF-bls">
-                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="41.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Стереть маршрут"/>
                                         <connections>
@@ -41,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-mE-d0g">
-                                        <rect key="frame" x="0.0" y="62" width="142.5" height="14"/>
+                                        <rect key="frame" x="0.0" y="65.5" width="164.5" height="14"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled"/>
                                     </button>
@@ -51,10 +104,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="XZk-bn-98U">
-                                <rect key="frame" x="275" y="741" width="99" height="76"/>
+                                <rect key="frame" x="261.5" y="761.5" width="112.5" height="79.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-d3-HZD">
-                                        <rect key="frame" x="0.0" y="0.0" width="99" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Marker"/>
                                         <connections>
@@ -62,7 +115,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHt-6C-J5e">
-                                        <rect key="frame" x="0.0" y="62" width="99" height="14"/>
+                                        <rect key="frame" x="0.0" y="65.5" width="112.5" height="14"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled"/>
                                         <connections>
@@ -87,6 +140,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XZk-bn-98U" secondAttribute="bottom" constant="45" id="mcO-Y7-6ny"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tga-X4-5xU"/>
                     <connections>
                         <outlet property="cleanRoute" destination="zEi-XF-bls" id="dLz-qN-Edw"/>
                         <outlet property="lastRouteOutlet" destination="3qk-ty-t6L" id="8N6-FS-cHY"/>
