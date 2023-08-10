@@ -27,6 +27,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginView.autocorrectionType = .no
+        passwordView.autocorrectionType = .no
      // registrationRealm = realm.objects(UserLogin.self)
     }
 
