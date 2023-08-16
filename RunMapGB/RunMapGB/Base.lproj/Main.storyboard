@@ -17,30 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-tO-l1C">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-tO-l1C">
                                 <rect key="frame" x="132" y="294" width="151" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-yL-QTi">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-yL-QTi">
                                 <rect key="frame" x="132" y="377" width="151" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBx-Pv-dz7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBx-Pv-dz7">
                                 <rect key="frame" x="171" y="571" width="73" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Войти"/>
                                 <connections>
                                     <action selector="logIn:" destination="IFo-7G-Wf1" eventType="touchUpInside" id="2ce-A7-vNS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-H9-jBj">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-H9-jBj">
                                 <rect key="frame" x="138" y="647" width="139" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Регистрация"/>
                                 <connections>
@@ -50,10 +46,27 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n5i-YC-IPX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n5i-YC-IPX" firstAttribute="trailing" secondItem="S1a-tO-l1C" secondAttribute="trailing" constant="131" id="0BO-7N-y4z"/>
+                            <constraint firstItem="n5i-YC-IPX" firstAttribute="bottom" secondItem="QNo-H9-jBj" secondAttribute="bottom" constant="176" id="4qJ-9n-g5O"/>
+                            <constraint firstItem="QNo-H9-jBj" firstAttribute="leading" secondItem="n5i-YC-IPX" secondAttribute="leading" constant="138" id="BBP-ri-0Lf"/>
+                            <constraint firstItem="WF6-yL-QTi" firstAttribute="leading" secondItem="n5i-YC-IPX" secondAttribute="leading" constant="132" id="IHw-Y7-oAj"/>
+                            <constraint firstItem="VBx-Pv-dz7" firstAttribute="leading" secondItem="n5i-YC-IPX" secondAttribute="leading" constant="171" id="KV4-xe-jGD"/>
+                            <constraint firstItem="WF6-yL-QTi" firstAttribute="top" secondItem="S1a-tO-l1C" secondAttribute="bottom" constant="49" id="OcK-ZJ-UoG"/>
+                            <constraint firstItem="n5i-YC-IPX" firstAttribute="trailing" secondItem="QNo-H9-jBj" secondAttribute="trailing" constant="137" id="X0c-gT-CzX"/>
+                            <constraint firstItem="S1a-tO-l1C" firstAttribute="top" secondItem="n5i-YC-IPX" secondAttribute="top" constant="246" id="kfd-ty-a6y"/>
+                            <constraint firstItem="n5i-YC-IPX" firstAttribute="trailing" secondItem="WF6-yL-QTi" secondAttribute="trailing" constant="131" id="lnQ-Y4-7rI"/>
+                            <constraint firstItem="VBx-Pv-dz7" firstAttribute="top" secondItem="WF6-yL-QTi" secondAttribute="bottom" constant="160" id="mBU-h8-TQp"/>
+                            <constraint firstItem="n5i-YC-IPX" firstAttribute="trailing" secondItem="VBx-Pv-dz7" secondAttribute="trailing" constant="170" id="ufg-ds-DRJ"/>
+                            <constraint firstItem="S1a-tO-l1C" firstAttribute="leading" secondItem="n5i-YC-IPX" secondAttribute="leading" constant="132" id="vXT-Rb-X3T"/>
+                            <constraint firstItem="QNo-H9-jBj" firstAttribute="top" secondItem="VBx-Pv-dz7" secondAttribute="bottom" constant="41" id="vvP-9N-yyf"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="logInOutlet" destination="VBx-Pv-dz7" id="OE1-zI-mlN"/>
                         <outlet property="loginView" destination="S1a-tO-l1C" id="ODG-1c-T8c"/>
                         <outlet property="passwordView" destination="WF6-yL-QTi" id="ia9-IF-yNf"/>
+                        <outlet property="registrationOutlet" destination="QNo-H9-jBj" id="LYe-h9-yXf"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="show" id="PX2-LY-bZR"/>
                     </connections>
                 </viewController>

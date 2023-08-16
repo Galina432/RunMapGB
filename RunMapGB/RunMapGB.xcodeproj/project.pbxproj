@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3EC64D2A87F5CE004C8F5D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EC64C2A87F5CE004C8F5D /* LocationManager.swift */; };
 		8C6B3B222A77CE5A0037BDC1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B212A77CE5A0037BDC1 /* Router.swift */; };
 		8C6B3B242A77CE740037BDC1 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B232A77CE740037BDC1 /* LaunchRouter.swift */; };
 		8C6B3B272A77CEBC0037BDC1 /* ModelRealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B3B262A77CEBC0037BDC1 /* ModelRealmUser.swift */; };
@@ -23,7 +24,21 @@
 		F775FA1C281AA351009A0A1A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F775FA1B281AA351009A0A1A /* RealmSwift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8C5FDE952A8806790042C6F3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8C3EC64C2A87F5CE004C8F5D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8C6B3B212A77CE5A0037BDC1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8C6B3B232A77CE740037BDC1 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
 		8C6B3B262A77CEBC0037BDC1 /* ModelRealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRealmUser.swift; sourceTree = "<group>"; };
@@ -53,6 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C3EC64B2A87F5B9004C8F5D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				8C3EC64C2A87F5CE004C8F5D /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		8C5FDE9F2A88083E0042C6F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8C6B3B202A77CE480037BDC1 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +107,7 @@
 			children = (
 				F775F9EB28193AA7009A0A1A /* RunMapGB */,
 				F775F9EA28193AA7009A0A1A /* Products */,
+				8C5FDE9F2A88083E0042C6F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +124,7 @@
 			children = (
 				F775F9EC28193AA7009A0A1A /* AppDelegate.swift */,
 				F775F9EE28193AA7009A0A1A /* SceneDelegate.swift */,
+				8C3EC64B2A87F5B9004C8F5D /* Location */,
 				8C6B3B202A77CE480037BDC1 /* Router */,
 				F775F9F028193AA7009A0A1A /* MapController.swift */,
 				8C6B3B282A77CEE20037BDC1 /* LoginViewController.swift */,
@@ -114,6 +146,7 @@
 				F775F9E528193AA7009A0A1A /* Sources */,
 				F775F9E628193AA7009A0A1A /* Frameworks */,
 				F775F9E728193AA7009A0A1A /* Resources */,
+				8C5FDE952A8806790042C6F3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +225,7 @@
 				8C6B3B242A77CE740037BDC1 /* LaunchRouter.swift in Sources */,
 				F775F9ED28193AA7009A0A1A /* AppDelegate.swift in Sources */,
 				F775F9EF28193AA7009A0A1A /* SceneDelegate.swift in Sources */,
+				8C3EC64D2A87F5CE004C8F5D /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

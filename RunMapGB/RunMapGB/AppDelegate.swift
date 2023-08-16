@@ -12,8 +12,6 @@ import GoogleMaps
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyDZwCvimIW30M_Qyj3Zr9NSpBxeNoLshtQ")
         return true
@@ -30,13 +28,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
     
-//    func applicationDidEnterBackground(_ application: UIApplication) {
-//        self.view.backgroundColor = .clear
-//         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
-//         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-//         blurEffectView.frame = self.view.bounds
-//         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//         self.view.addSubview(blurEffectView)
-//     }
 }
 
