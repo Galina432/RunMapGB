@@ -30,3 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
+//Lesson6
+//
+//При проверке утечек памяти ни одной не было обнаружено - были только зеленые галочки
+//
+//Самые емкие методы:
+//
+//- perform в роутере
+//
+//- updateCurrentLocation в MapController-e
